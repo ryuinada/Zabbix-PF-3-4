@@ -1,0 +1,8 @@
+#
+# zabbix34-pf-sudoers
+#
+#   sudoers file for pf monitoring from zabbix
+#   Please puy this file under /etc/sudoers.d
+#
+Defaults:zabbix !requiretty
+zabbix ALL=(root) NOPASSWD:/sbin/pfctl -sa
