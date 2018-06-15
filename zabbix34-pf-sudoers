@@ -5,4 +5,5 @@
 #   Please puy this file under /etc/sudoers.d
 #
 Defaults:zabbix !requiretty
+zabbix ALL=(root) NOPASSWD:/sbin/pfctl -sa -r
 zabbix ALL=(root) NOPASSWD:/sbin/pfctl -sa
